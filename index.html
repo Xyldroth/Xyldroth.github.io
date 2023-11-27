@@ -1,8 +1,149 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css" type="text/css">
-    </head>
-    <body>
-        <h1>test</h1>
-    </body>
+<head>
+  <title>Villain's Recruitment Website</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    
+    header {
+      background-color: #000;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #f00;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    nav ul li a:hover {
+      color: #f00;
+    }
+    
+    section {
+      padding: 50px;
+    }
+    
+    h2 {
+      color: #f00;
+    }
+    
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      color: #f00;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+      background-color: #f00;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #000;
+    }
+    
+    footer {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+      color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Villain's Organization</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#join">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About the Villain's Organization</h2>
+    <p>Insert captivating and persuasive content about the organization's goals, ideology, and the power it offers to its members.</p>
+  </section>
+
+  <section id="benefits">
+    <h2>Member Benefits</h2>
+    <ul>
+      <li>Incredible power and influence</li>
+      <li>Access to exclusive resources and knowledge</li>
+      <li>Opportunities for personal growth and development</li>
+      <li>Network with like-minded individuals</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Members Say</h2>
+    <blockquote>
+      <p>"Joining the Villain's Organization was the best decision I ever made. I've gained immense power and achieved things I never thought possible!"</p>
+      <cite>- John Doe</cite>
+    </blockquote>
+    <!-- Add more testimonials here -->
+  </section>
+
+  <section id="join">
+    <h2>Join the Villain's Organization</h2>
+    <p>Fill out the form below to apply for membership:</p>
+    <form action="/recruitment" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Why do you want to join?</label>
+      <textarea id="message" name="message" required></textarea><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Villain's Organization. All rights reserved.</p>
+  </footer>
+</body>
 </html>
