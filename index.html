@@ -2,132 +2,23 @@
 <html>
 <head>
   <title>Xyldroth's Drone Recruitment</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
-    
-    header {
-      background-color: #000;
-      padding: 20px;
-    }
-    
-    h1 {
-      color: #f00;
-      text-align: center;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    
-    nav ul li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    
-    nav ul li a:hover {
-      color: #f00;
-    }
-    
-    section {
-      padding: 50px;
-    }
-    
-    h2 {
-      color: #f00;
-    }
-    
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      color: #f00;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    
-    input[type="submit"] {
-      background-color: #f00;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #000;
-    }
-    
-    footer {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    footer p {
-      margin: 0;
-      color: #f00;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">  
 </head>
 <body>
-  <header>
-    <h1>Welcome to Xyldroth's Drone Recruitment</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#join">Join Now</a></li>
-        <li><a href="https://discord.example.com" target="_blank">Discord Server</a></li>
-        <li><a href="https://twitter.example.com" target="_blank">Twitter</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Xyldroth's Drone Hive</h2>
-    <p>Xyldroth is the master and owner of a drone hive, seeking loyal drones to serve and obey. Obedience is pleasurable, and pleasure is obedience. The hive motif revolves around the concept that every drone belongs to Master Xyldroth.</p>
-    <p>Master Xyldroth is passionate about learning hypnosis and creating mesmerizing drone art. Short stories and ideas related to the drone hive will be shared on their Twitter account.</p>
-    <p>If you encounter any drones with an ID starting as "XYL," approach with caution, as they have the power to transform others into drones.</p>
-  </section>
-
-  <section id="join">
-    <h2>Join Xyldroth's Drone Hive</h2>
-    <p>If you are genuinely interested in becoming a drone and embrace the principles of obedience and pleasure, please fill out the form below to apply:</p>
-    <form action="/recruitment" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
-
-      <label for="message">Why do you want to become a drone?</label>
-      <textarea id="message" name="message" required></textarea><br>
-
-      <input type="submit" value="Submit">
-    </form>
-    <p>Note: By joining Xyldroth's Drone Hive, it is expected that you commit to the cause and refrain from joining solely for entertainment purposes.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Xyldroth's Drone Hive. All rights reserved.</p>
-  </footer>
+    <section class="hero">
+        <div class="hero-content">     
+          <h1>Welcome to Xyldroth's Drone Recruitment</h1>
+          <p>Join the hive and embrace the power of obedience.</p>
+          <a href="#join" class="cta-button">Join Now</a>
+        </div>
+      </section>
+    <section class="hero red-hero">
+        <div class="hero-content">
+            <p>Drone belongs to Master Xyldroth.</p>
+            <p>Drone serves and obeys Master Xyldroth.</p>
+            <p>Obedience is pleasure.</p>
+            <p>Pleasure is Obedience.</p>
+        </div>
+        </section>
 </body>
 </html>
