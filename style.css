@@ -1,8 +1,31 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #791b1b; 
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #ff0303; 
+}
 
 body {
     background: black;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     margin: 0;
     padding: 0;
   }
