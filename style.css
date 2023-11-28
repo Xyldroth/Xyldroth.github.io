@@ -19,9 +19,32 @@
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #ff0303; 
+  background: #e62169; 
 }
 
+.hero {
+  position: relative;
+  background-image: "bannerxyldroth.png";
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
 body {
     background: black;
     color: #fff;
@@ -36,8 +59,10 @@ body {
   }
   
   h1 {
-    color: #f00;
+    font-size: 70px;
+    color: #e62169;
     text-align: center;
+    margin: 0;
   }
   
   nav ul {
@@ -59,7 +84,7 @@ body {
   }
   
   nav ul li a:hover {
-    color: #f00;
+    color: #e62169;
   }
   
   section {
@@ -67,7 +92,15 @@ body {
   }
   
   h2 {
-    color: #f00;
+    font-size: 50px;
+    color: #e62169;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 40px;
+    color: #e62169;
+    text-align: center;
   }
   
   div.scroll-container {
@@ -78,7 +111,8 @@ body {
   }
   
   div.scroll-container img {
-    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
   }
   
   
@@ -90,16 +124,22 @@ body {
   
   footer p {
     margin: 0;
-    color: #f00;
+    color: #e62169;
   }
 
-
+.logo{
+  text-align: center;
+}
 
 p{
-    padding-bottom: 20px;
+  font-size: 40px;
+    text-align: center;
+    margin:0;
 }
+
+
 .button {
-background-color: #f00;
+background-color: #e62169;
 color: #fff;
 padding: 10px 20px;
 text-decoration: none;
@@ -108,4 +148,13 @@ font-size: 18px;
 
 .button:hover {
 background-color: #000;
+}
+
+.doodle{
+  margin-bottom: 50px;
+}
+
+.scroll-container img:hover{
+  transition: 0.2s;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
