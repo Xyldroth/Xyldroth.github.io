@@ -123,6 +123,7 @@ body {
   }
   
   footer p {
+    font-size: 20px;
     margin: 0;
     color: #e62169;
   }
@@ -138,16 +139,54 @@ p{
 }
 
 
-.button {
-background-color: #e62169;
-color: #fff;
-padding: 10px 20px;
-text-decoration: none;
-font-size: 18px;
+wrapper {
+  padding: 1.5rem 0;
+  filter: url('#goo');
 }
 
-.button:hover {
-background-color: #000;
+.button {
+  display: inline-block;
+  text-align: center;
+  background: #e62169;
+  color: #fff;
+  font-weight: bold;
+  padding: 1.18em 1.32em 1.03em;
+  line-height: 1;
+  border-radius: 5px;
+  position: relative;
+  min-width: 8.23em;
+  text-decoration: none;
+  font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.button:before,
+.button:after {
+  width: 2.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: #e62169;
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.button:before {
+  bottom: -50%;
+  left: 10%;
+}
+
+.button:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+  transform: none;
 }
 
 .doodle{
@@ -156,5 +195,14 @@ background-color: #000;
 
 .scroll-container img:hover{
   transition: 0.2s;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+.scroll-container img{
+  transition: filter 0.2s;
+}
+
+.button-container{
+  padding: 50px;
+  text-align: center;
 }
