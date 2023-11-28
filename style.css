@@ -123,7 +123,7 @@ body {
   }
   
   footer p {
-    font-size: 20px;
+    font-size: 0px;
     margin: 0;
     color: #e62169;
   }
@@ -139,54 +139,56 @@ p{
 }
 
 
-wrapper {
-  padding: 1.5rem 0;
-  filter: url('#goo');
-}
-
 .button {
-  display: inline-block;
-  text-align: center;
-  background: #e62169;
-  color: #fff;
-  font-weight: bold;
-  padding: 1.18em 1.32em 1.03em;
-  line-height: 1;
-  border-radius: 5px;
-  position: relative;
-  min-width: 8.23em;
-  text-decoration: none;
-  font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1.25rem;
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+font-size: 18px;
 }
 
-.button:before,
-.button:after {
-  width: 2.4em;
-  height: 2.95em;
-  position: absolute;
-  content: "";
-  display: inline-block;
-  background: #e62169;
-  border-radius: 50%;
-  transition: transform 1s ease;
-  transform: scale(0);
-  z-index: -1;
+@keyframes rainbow{
+  100%,0%{
+    background-color: rgb(255,0,0);
+  }
+  8%{
+    background-color: rgb(255,127,0);
+  }
+  16%{
+    background-color: rgb(255,255,0);
+  }
+  25%{
+    background-color: rgb(127,255,0);
+  }
+  33%{
+    background-color: rgb(0,255,0);
+  }
+  41%{
+    background-color: rgb(0,255,127);
+  }
+  50%{
+    background-color: rgb(0,255,255);
+  }
+  58%{
+    background-color: rgb(0,127,255);
+  }
+  66%{
+    background-color: rgb(0,0,255);
+  }
+  75%{
+    background-color: rgb(127,0,255);
+  }
+  83%{
+    background-color: rgb(255,0,255);
+  }
+  91%{
+    background-color: rgb(255,0,127);
+  }
 }
 
-.button:before {
-  bottom: -50%;
-  left: 10%;
-}
-
-.button:after {
-  bottom: -25%;
-  right: 20%;
-}
-
-.button:hover:before,
-.button:hover:after {
-  transform: none;
+.button:hover {
+background-color: #000;
 }
 
 .doodle{
