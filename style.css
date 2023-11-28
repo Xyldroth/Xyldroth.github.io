@@ -31,7 +31,6 @@ body {
   }
   
   header {
-    background: repeating-radial-gradient(circle at center, #000000, #000000 40px, #4d2323 40px, #4d2323 80px);
     padding: 20px;
     padding-bottom: 40px;
   }
